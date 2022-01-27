@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
+  "id": "b3aa35e0-7f5f-11ec-b94e-cd0e8b8cf382",
+  "version": "0.0.1",
+  "packageName": "sharepointprovisioningteamsapp",
+  "developer": {
+    "name": "InSpark",
+    "websiteUrl": "https://4b58-217-105-50-76.ngrok.io",
+    "privacyUrl": "https://4b58-217-105-50-76.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://4b58-217-105-50-76.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "Sharepoint Provisioning",
+    "full": "Sharepoint Provisioning Teams App"
+  },
+  "description": {
+    "short": "SharePoint Provisioning",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "0247aefa-1553-4359-8aab-3b6e8148941e",
+      "name": "SP Provisioning",
+      "contentUrl": "https://4b58-217-105-50-76.ngrok.io/spProvisioningTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    },{
+      "entityId": "personalTab",
+      "name": "Personal Tab ",
+      "contentUrl": "https:///spProvisioningTab/personal.html",
+      "websiteUrl": "https://",
+      "scopes": ["personal"]
+    }
+  ],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "4b58-217-105-50-76.ngrok.io"
+  ],
+  "showLoadingIndicator": false
+}
